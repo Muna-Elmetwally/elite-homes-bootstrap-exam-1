@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-primary: #8B1CFF;
+    --bs-primary-rgb: 139, 28, 255;
+    --primary-color: #72409B;
+    --sec-color: #7107E6;
+    --heading-color: #790BEB;
+    --bg-primarycolor: #F3E8FF;
+    --hover-light: #E9ECEB;
+    --bg-section: #FFFFFF;
+    --faintd-bg: #875DB3;
+    --hover: #B25CFC;
+
+
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bootstrap's default button colors are hard-coded blue, so override them */
+.btn-primary {
+    --bs-btn-bg: #8b1cff;
+    --bs-btn-border-color: #8b1cff;
+    --bs-btn-hover-bg: #7312e0;
+    --bs-btn-hover-border-color: #7312e0;
+    --bs-btn-active-bg: #7312e0;
+    --bs-btn-active-border-color: #7312e0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span,
+li,
+a {
+    font-size: 18px;
+    display: inline-block;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.py-8 {
+    padding-block: 5rem;
+}
+
+.pt-5 {
+    padding-top: 3rem;
+}
+
+
+/* Things Bootstrap has no class for */
+.grad-text {
+    background: linear-gradient(90deg, #8b1cff, #790BEB, #c026d3, #f59e0b, #ede103);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.zoom-img {
+    transition: transform 0.4s ease;
+}
+
+.zoom-img:hover {
+    transform: scale(1.08);
+}
+
+.bg-deep {
+    background: linear-gradient(135deg, #4c1494, #5b1aa8);
+}
+
+.bg-light {
+    background-color: var(--bg-primarycolor);
+}
+
+.txt-color {
+    color: var(--heading-color);
+}
+
+.btn-light:hover i {
+    color: red !important;
+}
+
+.heart-pill {
+    width: 33px;
+    height: 44px;
+}
+
+.line {
+    width: 90px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8b1cff);
+}
+
+.line:last-child {
+    background: linear-gradient(90deg, #8b1cff, transparent);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+/* Mega menu: centered under the navbar */
+.navbar .mega-menu {
+    width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    /* right: auto; */
+    /* transform: translateX(-50%); */
+    /* border: none; */
+    /* border-radius: 0; */
+    /* margin-top: 0; */
+    /* padding: 2rem; */
+}
+
+
+
+#navbarNav ul li a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-underline-position: below;
+}
+
+
+/* header */
+header {
+
+    background: linear-gradient(rgba(76, 20, 148, .78), rgba(76, 20, 148, .78)),
+        url('../images/header/hero-bg-img.png') center / cover no-repeat;
+    background-size: cover;
+}
+
+.nav-underline {
+    --bs-nav-link-color: #475569;
+    --bs-nav-underline-link-active-color: #8b1cff;
+}
+
+.nav-underline:hover {
+    --bs-nav-link-color: #475569;
+    --bs-nav-underline-link-active-color: #8b1cff;
+    --bs-nav-link-hover-color: #8b1cff
+}
+
+.max-w-650 {
+    max-width: 40.625rem;
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+}
